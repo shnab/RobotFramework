@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20211226 21:56:52.425" rpa="false" schemaversion="2">
+<suite id="s1" name="Single Test Case" source="C:\development\robot-scripts\amazon\tests">
+<suite id="s1-s1" name="MultiSuite" source="C:\development\robot-scripts\amazon\tests\MultiSuite">
+<suite id="s1-s1-s1" name="Product 1" source="C:\development\robot-scripts\amazon\tests\MultiSuite\Product 1">
+<suite id="s1-s1-s1-s1" name="API" source="C:\development\robot-scripts\amazon\tests\MultiSuite\Product 1\API">
+<suite id="s1-s1-s1-s1-s1" name="FeatureOne" source="C:\development\robot-scripts\amazon\tests\MultiSuite\Product 1\API\FeatureOne.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Test Case 1">
+<kw name="Log" library="BuiltIn">
+<arg>I am a test case 1 of API feature 1</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211226 21:56:52.477" level="INFO">I am a test case 1 of API feature 1</msg>
+<status status="PASS" starttime="20211226 21:56:52.477" endtime="20211226 21:56:52.477"/>
+</kw>
+<tag>CurrentTestCase</tag>
+<status status="PASS" starttime="20211226 21:56:52.476" endtime="20211226 21:56:52.477"/>
+</test>
+<test id="s1-s1-s1-s1-s1-t2" name="Test Case 2">
+<kw name="Log" library="BuiltIn">
+<arg>I am a test case 2 of API feature 1</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211226 21:56:52.480" level="INFO">I am a test case 2 of API feature 1</msg>
+<status status="PASS" starttime="20211226 21:56:52.480" endtime="20211226 21:56:52.480"/>
+</kw>
+<tag>CurrentTestCase2</tag>
+<status status="PASS" starttime="20211226 21:56:52.479" endtime="20211226 21:56:52.481"/>
+</test>
+<status status="PASS" starttime="20211226 21:56:52.472" endtime="20211226 21:56:52.482"/>
+</suite>
+<status status="PASS" starttime="20211226 21:56:52.469" endtime="20211226 21:56:52.484"/>
+</suite>
+<status status="PASS" starttime="20211226 21:56:52.465" endtime="20211226 21:56:52.486"/>
+</suite>
+<status status="PASS" starttime="20211226 21:56:52.461" endtime="20211226 21:56:52.487"/>
+</suite>
+<status status="PASS" starttime="20211226 21:56:52.428" endtime="20211226 21:56:52.488"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CurrentTestCase</stat>
+<stat pass="1" fail="0" skip="0">CurrentTestCase2</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Single Test Case">Single Test Case</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="MultiSuite">Single Test Case.MultiSuite</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Product 1">Single Test Case.MultiSuite.Product 1</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="API">Single Test Case.MultiSuite.Product 1.API</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="FeatureOne">Single Test Case.MultiSuite.Product 1.API.FeatureOne</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
