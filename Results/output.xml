@@ -1,56 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20211226 21:56:52.425" rpa="false" schemaversion="2">
-<suite id="s1" name="Single Test Case" source="C:\development\robot-scripts\amazon\tests">
-<suite id="s1-s1" name="MultiSuite" source="C:\development\robot-scripts\amazon\tests\MultiSuite">
-<suite id="s1-s1-s1" name="Product 1" source="C:\development\robot-scripts\amazon\tests\MultiSuite\Product 1">
-<suite id="s1-s1-s1-s1" name="API" source="C:\development\robot-scripts\amazon\tests\MultiSuite\Product 1\API">
-<suite id="s1-s1-s1-s1-s1" name="FeatureOne" source="C:\development\robot-scripts\amazon\tests\MultiSuite\Product 1\API\FeatureOne.robot">
-<test id="s1-s1-s1-s1-s1-t1" name="Test Case 1">
-<kw name="Log" library="BuiltIn">
-<arg>I am a test case 1 of API feature 1</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211226 21:56:52.477" level="INFO">I am a test case 1 of API feature 1</msg>
-<status status="PASS" starttime="20211226 21:56:52.477" endtime="20211226 21:56:52.477"/>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220115 22:23:49.213" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="C:\development\robot-scripts\amazon\tests\Amazon.robot">
+<kw name="Insert Testing Data" type="SETUP">
+<msg timestamp="20220115 22:23:49.260" level="FAIL">No keyword with name 'Insert Testing Data' found.</msg>
+<status status="FAIL" starttime="20220115 22:23:49.260" endtime="20220115 22:23:49.260"/>
 </kw>
-<tag>CurrentTestCase</tag>
-<status status="PASS" starttime="20211226 21:56:52.476" endtime="20211226 21:56:52.477"/>
+<test id="s1-t1" name="user can search for products">
+<status status="FAIL" starttime="20220115 22:23:49.260" endtime="20220115 22:23:49.261">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
 </test>
-<test id="s1-s1-s1-s1-s1-t2" name="Test Case 2">
-<kw name="Log" library="BuiltIn">
-<arg>I am a test case 2 of API feature 1</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211226 21:56:52.480" level="INFO">I am a test case 2 of API feature 1</msg>
-<status status="PASS" starttime="20211226 21:56:52.480" endtime="20211226 21:56:52.480"/>
+<test id="s1-t2" name="User must sign in to check out">
+<doc>This is some basic info about the test</doc>
+<tag>Smoke Search</tag>
+<status status="FAIL" starttime="20220115 22:23:49.262" endtime="20220115 22:23:49.262">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
+</test>
+<test id="s1-t3" name="Logged out user can search for products">
+<tag>Current</tag>
+<status status="FAIL" starttime="20220115 22:23:49.263" endtime="20220115 22:23:49.264">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
+</test>
+<test id="s1-t4" name="Logged out user can view a product">
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220115 22:23:49.265" endtime="20220115 22:23:49.265">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
+</test>
+<test id="s1-t5" name="Logged out user can add product to cart">
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220115 22:23:49.266" endtime="20220115 22:23:49.266">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
+</test>
+<test id="s1-t6" name="Logged out user must sign in to check out">
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220115 22:23:49.267" endtime="20220115 22:23:49.268">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
+</test>
+<test id="s1-t7" name="Search page should contain 59 results">
+<tag>XpathXTimes</tag>
+<status status="FAIL" starttime="20220115 22:23:49.269" endtime="20220115 22:23:49.269">Parent suite setup failed:
+No keyword with name 'Insert Testing Data' found.</status>
+</test>
+<kw name="Cleanup Testing Data" type="TEARDOWN">
+<msg timestamp="20220115 22:23:49.272" level="FAIL">No keyword with name 'Cleanup Testing Data' found.</msg>
+<status status="FAIL" starttime="20220115 22:23:49.272" endtime="20220115 22:23:49.272">No keyword with name 'Cleanup Testing Data' found.</status>
 </kw>
-<tag>CurrentTestCase2</tag>
-<status status="PASS" starttime="20211226 21:56:52.479" endtime="20211226 21:56:52.481"/>
-</test>
-<status status="PASS" starttime="20211226 21:56:52.472" endtime="20211226 21:56:52.482"/>
-</suite>
-<status status="PASS" starttime="20211226 21:56:52.469" endtime="20211226 21:56:52.484"/>
-</suite>
-<status status="PASS" starttime="20211226 21:56:52.465" endtime="20211226 21:56:52.486"/>
-</suite>
-<status status="PASS" starttime="20211226 21:56:52.461" endtime="20211226 21:56:52.487"/>
-</suite>
-<status status="PASS" starttime="20211226 21:56:52.428" endtime="20211226 21:56:52.488"/>
+<doc>This is some basic info about whole suite</doc>
+<status status="FAIL" starttime="20220115 22:23:49.216" endtime="20220115 22:23:49.272">Suite setup failed:
+No keyword with name 'Insert Testing Data' found.
+
+Also suite teardown failed:
+No keyword with name 'Cleanup Testing Data' found.</status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="7" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">CurrentTestCase</stat>
-<stat pass="1" fail="0" skip="0">CurrentTestCase2</stat>
+<stat pass="0" fail="1" skip="0">Current</stat>
+<stat pass="0" fail="3" skip="0">Smoke</stat>
+<stat pass="0" fail="1" skip="0">Smoke Search</stat>
+<stat pass="0" fail="1" skip="0">XpathXTimes</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Single Test Case">Single Test Case</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="MultiSuite">Single Test Case.MultiSuite</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Product 1">Single Test Case.MultiSuite.Product 1</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="API">Single Test Case.MultiSuite.Product 1.API</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="FeatureOne">Single Test Case.MultiSuite.Product 1.API.FeatureOne</stat>
+<stat pass="0" fail="7" skip="0" id="s1" name="Amazon">Amazon</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220115 22:23:49.254" level="ERROR">Error in file 'C:\development\robot-scripts\amazon\tests\Amazon.robot' on line 5: Resource file 'Resources\Common.robot' does not exist.</msg>
+<msg timestamp="20220115 22:23:49.255" level="ERROR">Error in file 'C:\development\robot-scripts\amazon\tests\Amazon.robot' on line 7: Resource file 'Resources\Amazon.robot' does not exist.</msg>
+<msg timestamp="20220115 22:23:49.257" level="ERROR">Error in file 'C:\development\robot-scripts\amazon\tests\Amazon.robot' on line 8: Resource file 'Resources\AmazonApp.robot' does not exist.</msg>
 </errors>
 </robot>

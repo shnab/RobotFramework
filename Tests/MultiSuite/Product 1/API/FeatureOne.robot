@@ -24,7 +24,7 @@ Test Case 1
     [Tags]   CurrentTestCase
     log    I am a test case 1 of API feature 1
 Test Case 2
-#Ayni anda biden fazla tag veya testcase run edilebilir
+#Ayni anda birden fazla tag veya testcase run edilebilir
 #robot -d results -N "Single Test Case" -i CurrentTestCase -i CurrentTestCase2 tests
     [Tags]   CurrentTestCase2
     log    I am a test case 2 of API feature 1
