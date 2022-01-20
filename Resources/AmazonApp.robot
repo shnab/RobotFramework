@@ -6,6 +6,7 @@ Resource  Resources/PO/Product.robot
 Resource  Resources/PO/Cart.robot
 Resource  Resources/PO/SignIn.robot
 
+#Keywordlar buarya koyduk
 *** Keywords ***
 user is not logged in
     Log  Check to see whether user is logged in

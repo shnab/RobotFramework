@@ -1,15 +1,25 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+#Burasi teardown vs icin olusturduk
 *** Variables ***
+#${BROWSER}    chrome
+
+#*** Keywords ***
+#Begin Web Test
+#    OPEN BROWSER    about:blank     chrome
+#    MAXIMIZE BROWSER WINDOW
+#
+#End Web Test
+#    CLOSE BROWSER
 
 *** Keywords ***
 Begin Web Test
-    OPEN BROWSER    about:blank     chrome
-    MAXIMIZE BROWSER WINDOW
+    set selenium timeout  30 seconds
+    Open Browser  about:blank   ${BROWSER}
 
 End Web Test
-    CLOSE BROWSER
+    Close Browser
 
 Insert Testing Data
     Custom Keyword 1
