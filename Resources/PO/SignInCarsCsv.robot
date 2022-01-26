@@ -13,6 +13,7 @@ Navigate To
 
 Enter Credentials
     [Arguments]  ${Credentials}
+#    burada list icindeki elementlere erisiyoruz. ==>${Credentials[0]}'
     run keyword unless  '${Credentials[0]}' == '#BLANK'  Input Text  ${SIGN_IN_EMAIL}  ${Credentials[0]}
     run keyword unless  '${Credentials[1]}' == '#BLANK'  Input Text  ${SIGN_IN_PASSWORD}  ${Credentials[1]}
 
